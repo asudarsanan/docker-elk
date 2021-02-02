@@ -5,11 +5,12 @@ input {
 
 	tcp {
 		port => 5000
-		codec => "json"                                                                          
-    		type => "rsyslog" 
+		
 	}
 
-		
+	udp {
+		port => 5000
+		type => syslog
 }
 
 ## Add your filters / logstash plugins configuration here
